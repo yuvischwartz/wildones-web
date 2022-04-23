@@ -5,7 +5,8 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Quicksand', sans-serif; */
 
 .logo{
-  font-family: 'Inspiration', cursive;
+  font-family:  'Inspiration',cursive;
+  font-style: italic;
 }
 *{
   font-family: 'Lato', sans-serif;
@@ -112,6 +113,7 @@ background-blend-mode: lighten;
 .hover-coffe:hover{
   color:#B88D76;
 }
+
 .hover-bg-coffe:hover{
   background-color: #B88D76;
 }

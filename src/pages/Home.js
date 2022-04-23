@@ -1,7 +1,10 @@
 import React from 'react'
 import {useState} from 'react'; 
 import DropdownMenu from '../components/DropdownMenu'
+import LogoBar from '../components/LogoBar';
+// import Footer from '../components/Footer';
 import Search from '../components/Search'
+import Topbar2 from '../components/Topbar2';
 // import image from "images/vg-5.jpg"; 
 
 function Home() {
@@ -14,6 +17,8 @@ function Home() {
 
   return (
     <>
+      <Topbar2 />
+      <LogoBar/>
       <div className={'bg-white h-3/5 relative'}>
 
       <span className={'flex justify-center'}>
@@ -26,8 +31,17 @@ function Home() {
       
       {/* bjbj */}
       <div className={'h-screen  w-full flex flex-row'}>
-      <div className={'h-full w-1/2 bg-pistachio'}>
-        
+        <div className={'h-full w-1/2 bg-pistachio '}>
+          <div className={' items-center text-center p-48'}>
+          <h1 className={'logo text-3xl text-black'}>Moments that worth to remember</h1>
+            <h2 className={'logo2 text-3xl p-0'}>They might forget this, but we never will.</h2>
+            <p className={'text-sm font2 p-5'}>text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text text text text text text
+            text text text text text text text text text text text </p>
+            <button className={'bg-dark-coffe text-white font2 text-sm py-2 px-6'}>Learn More</button>
+            </div>
       </div>
         <div className={'h-full w-1/2 bg-pistachio3 flex justify-center items-center relative'}>
         <img className={'h-24 absolute top-28 right-44'} alt='img' src={`images/tape1.png`}/> 
@@ -113,22 +127,56 @@ function Home() {
             <p className={'font-ligth text-right text-sm pr-3 py-3'}>text text text text text text texttext text text text <br /> text text text texttext text text text textfrf textfrf<br /> ttextfrftextfrfext text text texttexvtt  rfrf<br />trffextextfextfrftextfrft text text tex<br /> </p>
             <p className={'font-ligth text-left text-sm pl-3  py-3'}>text text text text text text texttext text text text <br /> text text text texttext text text text frfrfrfr<br /> textfrftextfrftextfrftext text text texttexvtvt frfr<br />frfrtextfrfxtfrftextfrfext text text <br /> </p>
           </div>
-          <h2 className={'logo2 text-md text-center'}>Get Started</h2>
+          {/* <h2 className={'logo2 text-md text-center'}>Get Started</h2> */}
+          <button className={'bg-dark-pistachio text-white logo2 text-sm py-2 px-6 hover-bg-coffe'}>Get Started</button>
           </div>
         <div className={'flex justify-center '}>
-          <img className={'z-1 h-36 absolute top-60'} alt='img' src={`images/line.png`} />
+          <img className={'z-1 h-40 w-56 absolute top-64'} alt='img' src={`images/line.png`} />
         </div>
         <div className={'h-3/5 bg-peach '}>
           <div className={'flex flex-row justify-center'}>
-          <div className={'py-10 h-full w-1/6'}>1</div> 
-          <div className={'py-10 h-full w-1/6'}>2</div>
-          <div className={'py-10 w-1/6 border'}>3</div>
-          <div className={'py-10 w-1/6 border'}>4</div>
-            <div className={'py-10 w-1/6 border'}>5</div>
-            <div className={' py-10 w-1/6 border'}>6</div>
+          <div className={'pt-32 w-1/6'}></div> 
+            <div className={'pt-32 w-1/6 text-center'}>
+              <h1 className={'logo2 text-4xl'}>01.</h1>
+              <h2 className={'font2 text-sm'}>pick a budget</h2>
+              <p className={'font-ligth text-sm pt-3'}>text text text text text text <br /> text text text text text text text <br />
+              text text text text text text <br /> text text text text text text text <br />
+              text text text text text text <br /> text text text text text text text <br /></p>
+          </div>
+          <div className={'pt-32 w-1/6 text-center'}>
+            <h1 className={'logo2 text-4xl'}>02.</h1>
+              <h2 className={'font2 text-sm'}>Make a to do list</h2>
+              <p className={'font-ligth text-sm pt-3'}>text text text text text text <br /> text text text text text text text <br />
+              text text text text text text <br /> text text text text text text text <br />
+              text text text text text text <br /> text text text text text text text <br /></p>
+          </div>
+            <div className={'pt-32  w-1/6 text-center'}>
+            <h1 className={'logo2 text-4xl'}>03.</h1>
+              <h2 className={'font2 text-sm'}>Guests List</h2>
+              <p className={'font-ligth text-sm pt-3'}>text text text text text text <br /> text text text text text text text <br />
+              text text text text text text <br /> text text text text text text text <br />
+              text text text text text text <br /> text text text text text text text <br /></p>
+          </div>
+            <div className={'pt-32  w-1/6 text-center'}>
+            <h1 className={'logo2 text-4xl'}>04.</h1>
+              <h2 className={'font2 text-sm'}>Brows our site</h2>
+              <p className={'font-ligth text-sm pt-3'}>text text text text text text <br /> text text text text text text text <br />
+              text text text text text text <br /> text text text text text text text <br />
+              text text text text text text <br /> text text text text text text text <br /></p>
+            </div>
+            <div className={' pt-32  w-1/6 '}></div>
             </div>
         </div>
-        </div>
+      </div>
+      {/* <img  
+                className = {'h-full w-full'}  
+                alt='img'
+                src={`images/banner.png`}
+                /> */}
+      {/* footer */}
+      {/* <Footer/> */}
+
+     
     </>
   )
 }

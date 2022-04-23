@@ -38,7 +38,7 @@ function Topbar() {
                 
           <ul className={'flex flex-row text-md text-black pt-2 justify-between sm:mx-20 mx-3 '}>
                       <li className={'logo2 text-left text-sm text-white sm:hidden pt-1'}>Hello, UserName welcome back!</li>
-                      <li className={'hidden sm:inline-block logo2 cursor-pointer hover:border-b hover:border-black'}>Home</li>
+                      <li className={'hidden sm:inline-block logo2 cursor-pointer hover:border-b hover:border-black'}><Link to="/"className={'logo2'}>Home</Link></li>
                       <li onClick={handleClick}
                         // onMouseEnter={onMouseEnter}
                         // onMouseLeave={onMouseLeave}
@@ -48,9 +48,9 @@ function Topbar() {
                 // onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}
               />}
                       </li>
-                      <li className={'hidden sm:inline-block logo2 cursor-pointer hover:border-b hover:border-black'}>Birthday </li>
-                      <li className={'hidden sm:inline-block logo2 cursor-pointer hover:border-b hover:border-black'}>About</li>
-                      <li className={'hidden sm:inline-block logo2 cursor-pointer hover:border-b hover:border-black'}>Contact Us</li>
+                      <li className={'hidden sm:inline-block logo2 cursor-pointer hover:border-b hover:border-black'}><Link to="/to-do's" className={'logo2'}>Birthday Check List</Link></li>
+                      <li className={'hidden sm:inline-block logo2 cursor-pointer hover:border-b hover:border-black'}><Link to="/about" className={'logo2'}>About</Link></li>
+                      <li className={'hidden sm:inline-block logo2 cursor-pointer hover:border-b hover:border-black'}><Link to="/contact"className={'logo2'}>Contact Us</Link></li>
                   </ul>
                 
             </div>    

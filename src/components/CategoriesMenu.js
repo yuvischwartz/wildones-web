@@ -8,21 +8,24 @@ function CategoriesMenu(props) {
     const handleClick = () => setClick(!click);
    
     return (
-        <>
-          <div className={'mt-1 px-6 mx-0 py-2 bg-pistachio text-white absolute'}>
-          <ul className={'w-full cursor-pointer '}>
-                    <li className={'font-ligth text-black py-1 hover:bg-gray-200 cursor-pointer'}>Decorations</li>
-                    {/* <li className={'font-ligth text-black py-1 hover:bg-gray-200 cursor-pointer'}>Balloons</li> */}
-                    <li className={'font-ligth text-black py-1 cursor-pointer'}>Activities</li>
-                    <li className={'font-ligth text-black py-1 cursor-pointer'}>Cake</li>
-                    <li className={'font-ligth text-black py-1 cursor-pointer'}>Food</li>
-                    <li className={'font-ligth text-black py-1 cursor-pointer'}>Deserts</li>
-            <li className={'font-ligth text-black py-1 cursor-pointer'}>Party Rentals</li>
-            <li className={'font-ligth text-black py-1 cursor-pointer'}>Invitations</li>
-            <li className={'font-ligth text-black py-1 cursor-pointer'}>Photographer</li>
-              </ul>
-          </div>    
-    </>
+      <>
+        <div className={'z-50 bg-pistachio text-black  w-80 h-36 absolute mt-2 left-40 '}>
+          <div className={'flex flex-row justify-between'}>
+            <ul className={'p-2 mx-2'}>
+              <li className={'logo2 text-md cursor-pointer hover:border-b hover:border-black'}><Link to="/categories/decorations">Decorations</Link></li>
+              <li className={'logo2 text-md'}>Activities</li>
+              <li className={'logo2 text-md'}>Cake</li>
+              <li className={'logo2 text-md'}>Photographer</li>
+            </ul>
+            <ul className={'p-2 mx-2'}>
+              <li className={'logo2 text-md'}>Food</li>
+              <li className={'logo2 text-md'}>Deserts</li>
+              <li className={'logo2 text-md'}>Party Rentals</li>
+              <li className={'logo2 text-md'}>Amazon's links</li>
+            </ul>
+          </div>  
+        </div>
+      </>
   
   )
 }

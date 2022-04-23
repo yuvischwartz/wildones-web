@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 function Footer() {
     return (
       <>
-    <div className={'w-screen h-72 sm:h-48 grid grid-cols-12 rounded relative bg-red-500'}>
-          <div className={'col-span-12 bg-red-500 rounded'}>
+    <div className={'w-screen h-72 sm:h-48 grid grid-cols-12 rounded relative bg-dark-coffe'}>
+          <div className={'col-span-12 bg-dark-coffe '}>
             <div className={'flex sm:justify-between my-5 mx-2 sm:mx-20 text-white'}>
                   <div>
                     <ul>
@@ -45,7 +45,7 @@ function Footer() {
                             <div class="mt-4 flex">
                             <input type="text" className={'p-2 border border-grey-light round text-black text-sm h-auto'}
                             placeholder={'Your email address here'}/>
-                                <button className={'border border-grey-light text-white rounded-sm h-auto text-xs font2 p-3 hover:text-red-500 hover:bg-white hover:border-red-500'}>
+                                <button className={'border border-grey-light text-white rounded-sm h-auto text-xs font2 p-3 hover:text-black hover:bg-white hover:border-black'}>
                                     Subscribe</button>
                             </div>
                             <h3 className={'font2 text-sm py-1'}>Get digital marketing updates in your mailbox!</h3>
